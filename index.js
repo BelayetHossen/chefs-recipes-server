@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.send('server is running');
 });
 
+app.get('/chefs', (req, res) => {
+    res.send(chefs);
+});
+
 
 
 app.listen(port, () => {
